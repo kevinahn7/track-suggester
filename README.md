@@ -12,7 +12,7 @@ Use "git clone [copied url]" to clone these files into a directory.
 Here are the links to our GitHub repositories and the GitHub page:  
 
 * [The Repository](https://github.com/kevinahn7/track-suggester)  
-* [The Webpage](https://kevinahn7.github.io/track-suggester)
+* [The Webpage](https://kevinahn7.github.io/track-suggester/)
 
 ## Technologies Used
 * HTML  
