@@ -44,3 +44,11 @@ html {
 label {
     font-weight: bold;
 }
+
+.result {
+    margin: 20px 0;
+}
+
+#resetButton {
+    margin: 20px 0;
+}
