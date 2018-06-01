@@ -57,11 +57,11 @@ $(document).ready(function() {
 
         $(".questionFour").hide();
         $(".questionFive").show();
-    })
+    });
 
     $(".questionFive").submit(function(event) {
         event.preventDefault();
-        var questionFiveAnswer = $("input:radio[name=one]:checked").val();
+        var questionFiveAnswer = $("input:radio[name=five]:checked").val();
         if (questionFiveAnswer === "csharpYes") {
             csharpScore ++;
         } else if (questionFiveAnswer === "rubyYes") {
@@ -79,13 +79,8 @@ $(document).ready(function() {
         } else if (csharpScore > rubyScore && csharpScore > cssScore) {
             $(".choseCsharp").show();
         }
+        alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
     });
-
-    // if (rubyScore > cssScore && rubyScore > csharpScore) {
-    //     $(".choseRuby").show();
-    // } else if (cssScore > rubyScore && cssScore > csharpScore) {
-    //     $(".choseCss").show();
-    // } else if ()
 });
 
 
