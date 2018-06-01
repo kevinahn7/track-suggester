@@ -24,3 +24,17 @@
 .theSubmit {
     margin-top: 20px;
 }
+
+body {
+    background: lightgray;
+    height: 100%;
+}
+
+.container {
+    background: white;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
