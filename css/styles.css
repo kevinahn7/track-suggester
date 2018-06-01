@@ -8,7 +8,9 @@
 .choseCss,
 .equal,
 .or,
-.reset {
+.reset,
+.name,
+.result {
     display: none;
 }
 
@@ -37,4 +39,8 @@ body {
 
 html {
     height: 100%;
+}
+
+label {
+    font-weight: bold;
 }

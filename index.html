@@ -18,6 +18,14 @@
             <h2 class="intro">Click here to take the quiz!</h2>
             <br />
             <button class="begin btn btn-primary intro">Take the quiz</button>
+
+            <form class="name">
+                <label for="enterName">Enter your name: </label>
+                <input type="text" id="enterName" required>
+                <br />
+                <input type="submit" class="btn btn-primary">
+            </form>
+
             <!--Questions-->
             <form class="questionOne">
                 <h3>What do you prefer making?</h3>
@@ -91,6 +99,13 @@
                 </div>
                 <input type="submit" class="btn theSubmit">
             </form>
+
+            <div class="result">
+                <h2><span class="enterName"></span>, here are your results!</h2>
+            </div>
+
+
+
             <!--Possible results-->
             <div class="choseRuby">
                 <h2>You should take the Ruby and Rails track!</h2>

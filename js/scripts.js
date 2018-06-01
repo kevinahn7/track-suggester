@@ -2,8 +2,15 @@ $(document).ready(function() {
     let rubyScore = 0;
     let cssScore = 0;
     let csharpScore = 0;
+    let theirName = "";
     $(".begin").click(function() {
         $(".intro").hide();
+        $(".name").show();
+    })
+    $(".name").submit(function(event) {
+        event.preventDefault();
+        theirName = $("#enterName").val();
+        $(".name").hide();
         $(".questionOne").show();
     })
     $(".questionOne").submit(function(event) {
@@ -77,7 +84,9 @@ $(document).ready(function() {
         }
 
         $(".questionFive").hide();
+        $(".result").show();
         $(".reset").show();
+        $(".enterName").text(theirName);
 
         if (rubyScore > cssScore && rubyScore > csharpScore) {
             $(".choseRuby").show();
