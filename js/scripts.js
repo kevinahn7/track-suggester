@@ -71,7 +71,21 @@ $(document).ready(function() {
         }
 
         $(".questionFive").hide();
-    })
+
+        if (rubyScore > cssScore && rubyScore > csharpScore) {
+            $(".choseRuby").show();
+        } else if (cssScore > rubyScore && cssScore > csharpScore) {
+            $(".choseCss").show();
+        } else if (csharpScore > rubyScore && csharpScore > cssScore) {
+            $(".choseCsharp").show();
+        }
+    });
+
+    // if (rubyScore > cssScore && rubyScore > csharpScore) {
+    //     $(".choseRuby").show();
+    // } else if (cssScore > rubyScore && cssScore > csharpScore) {
+    //     $(".choseCss").show();
+    // } else if ()
 });
 
 
