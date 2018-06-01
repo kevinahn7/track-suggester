@@ -17,6 +17,7 @@ $(document).ready(function() {
         $(".intro").hide();
         $(".questionOne").hide();
         $(".questionTwo").show();
+        //alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
     });
 
     $(".questionTwo").submit(function(event) {
@@ -31,6 +32,7 @@ $(document).ready(function() {
 
         $(".questionTwo").hide();
         $(".questionThree").show();
+        //alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
     });
 
     $(".questionThree").submit(function(event) {
@@ -44,6 +46,7 @@ $(document).ready(function() {
 
         $(".questionThree").hide();
         $(".questionFour").show();
+        //alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
     });
 
     $(".questionFour").submit(function(event) {
@@ -57,6 +60,7 @@ $(document).ready(function() {
 
         $(".questionFour").hide();
         $(".questionFive").show();
+        //alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
     });
 
     $(".questionFive").submit(function(event) {
@@ -78,8 +82,24 @@ $(document).ready(function() {
             $(".choseCss").show();
         } else if (csharpScore > rubyScore && csharpScore > cssScore) {
             $(".choseCsharp").show();
+        } else if (cssScore === rubyScore && cssScore === csharpScore) {
+            $(".equal").show();
+        } else if (rubyScore === csharpScore && rubyScore > cssScore) {
+            $(".choseRuby").show();
+            $(".or1").show();
+            $(".choseCsharp").show();
+        } else if (rubyScore === cssScore && rubyScore > csharpScore) {
+            $(".choseRuby").show();
+            $(".or1").show();
+            $(".choseCss").show();
+        } else if (csharpScore === cssScore && csharpScore > rubyScore) {
+            $(".choseCsharp").show();
+            $(".or2").show();
+            $(".choseCss").show();
         }
+
         alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
+    
     });
 });
 

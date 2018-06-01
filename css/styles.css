@@ -4,6 +4,8 @@
 .questionFive,
 .choseRuby,
 .choseCsharp,
-.choseCss {
+.choseCss,
+.equal,
+.or {
     display: none;
 }
