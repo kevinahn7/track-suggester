@@ -1,3 +1,4 @@
+.questionOne,
 .questionTwo,
 .questionThree,
 .questionFour,
@@ -9,4 +10,17 @@
 .or,
 .reset {
     display: none;
+}
+
+.or {
+    margin: 10px 0;
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+    text-align: center;
+}
+
+.theSubmit {
+    margin-top: 20px;
 }

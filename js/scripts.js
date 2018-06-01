@@ -2,7 +2,10 @@ $(document).ready(function() {
     let rubyScore = 0;
     let cssScore = 0;
     let csharpScore = 0;
-
+    $(".begin").click(function() {
+        $(".intro").hide();
+        $(".questionOne").show();
+    })
     $(".questionOne").submit(function(event) {
         event.preventDefault();
         var questionOneAnswer = $("input:radio[name=one]:checked").val();
@@ -14,7 +17,6 @@ $(document).ready(function() {
             cssScore ++;
         }
         
-        $(".intro").hide();
         $(".questionOne").hide();
         $(".questionTwo").show();
         //alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
