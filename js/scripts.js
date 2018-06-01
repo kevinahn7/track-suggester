@@ -99,7 +99,7 @@ $(document).ready(function() {
             $(".choseCss").show();
         }
 
-        alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
+        //alert("ruby=" + rubyScore + ", css=" + cssScore + ", csharp=" +csharpScore);
     
     });
 });
