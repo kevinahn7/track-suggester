@@ -75,6 +75,7 @@ $(document).ready(function() {
         }
 
         $(".questionFive").hide();
+        $(".reset").show();
 
         if (rubyScore > cssScore && rubyScore > csharpScore) {
             $(".choseRuby").show();

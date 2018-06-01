@@ -6,6 +6,7 @@
 .choseCsharp,
 .choseCss,
 .equal,
-.or {
+.or,
+.reset {
     display: none;
 }
