@@ -38,8 +38,7 @@ $(document).ready(function() {
         var questionThreeAnswer = $("#cssAnswer").val();
         if (questionThreeAnswer === "cssYes") {
             cssScore ++;
-        }
-        else {
+        } else {
             cssScore --;
         }
 
@@ -47,8 +46,32 @@ $(document).ready(function() {
         $(".questionFour").show();
     });
 
+    $(".questionFour").submit(function(event) {
+        event.preventDefault();
+        var questionFourAnswer = $("#csharpAnswer").val();
+        if (questionFourAnswer === "csharpYes") {
+            csharpScore ++;
+        } else {
+            csharpScore --;
+        }
 
+        $(".questionFour").hide();
+        $(".questionFive").show();
+    })
 
+    $(".questionFive").submit(function(event) {
+        event.preventDefault();
+        var questionFiveAnswer = $("input:radio[name=one]:checked").val();
+        if (questionFiveAnswer === "csharpYes") {
+            csharpScore ++;
+        } else if (questionFiveAnswer === "rubyYes") {
+            rubyScore ++;
+        } else {
+            cssScore ++;
+        }
+
+        $(".questionFive").hide();
+    })
 });
 
 
