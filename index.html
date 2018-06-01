@@ -9,10 +9,86 @@
 </head>
 <body>
     <div class="container">
-        <header>
-
+        <header class="jumbotron">
+            <h1>Epicodus Track Suggestor</h1>
+            <h2>This will help you choose which track is the right one for you</h2>
         </header>
         <div class="main">
+            <h3>If you want to find out the right track for you, fill this quiz out!</h3>
+
+            <form class="questionOne">
+                <h3>What do you prefer making?</h3>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="one" value="csharpYes">
+                        Client and database applications
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="one" value="rubyYes">
+                        Beautifully styled websites
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="one" value="cssYes">
+                        Interactive web applications
+                    </label>
+                </div>
+                <input type="submit" id="answerOne">
+            </form>
+        
+            <form class="questionTwo">
+                <h3>Do you like simplicity and productivity?</h3>
+                <select class="form-control" id="rubyAnswer">
+                    <option value="rubyYes">Yes</option>
+                    <option calue="rubyNo">No</option>
+                  </select>
+                <input type="submit" id="answerTwo">
+            </form>
+
+            <form class="questionThree">
+                <h3>Do you like styling and designing websites?</h3>
+                <select class="form-control" id="cssAnswer">
+                    <option value="cssYes">Yes</option>
+                    <option calue="cssNo">No</option>
+                  </select>
+                <input type="submit" id="answerTwo">
+            </form>
+
+            <form class="questionFour">
+                <h3>Do you like being able to develop games?</h3>
+                <select class="form-control" id="csharpAnswer">
+                    <option value="csharpYes">Yes</option>
+                    <option calue="csharpNo">No</option>
+                  </select>
+                <input type="submit" id="answerTwo">
+            </form>
+
+            <form class="questionFive">
+                <h3>Where would you rather work?</h3>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="five" value="rubyYes">
+                        Hip startup with tons of young people
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="five" value="csharpYes">
+                        Steady corporate office with benefits
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="five" value="cssYes">
+                        At home, freelancing with no restrictions
+                    </label>
+                </div>
+                <input type="submit" id="answerFive">
+            </form>
+
 
         </div>
     </div>
